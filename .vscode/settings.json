@@ -1,15 +1,7 @@
 {
   "runOnSave.commands": [
     {
-      "command": "taskkill -im Gin_try.exe /f",
-      "runIn": "terminal"
-    },
-    {
       "command": "go build",
-      "runIn": "terminal"
-    },
-    {
-      "command": "start Gin_try.exe",
       "runIn": "terminal"
     }
   ]

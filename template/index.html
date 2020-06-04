@@ -4,4 +4,14 @@
 
 <h1>Hello Gin</h1>
 
+{{ range .payload }}
+
+<!-- Create link and articles lists -->
+<a href="/article/view/{{.ID}}">
+  <h2>{{ .Title }}</h2>
+</a>
+<p>{{ .Body }}</p>
+
+{{ end }}
+
 {{ template "footer.html" . }}
